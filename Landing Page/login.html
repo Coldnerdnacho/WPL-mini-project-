@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SAPDS</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Reuse global styles -->
+    <link rel="stylesheet" href="login.css">  <!-- Styles for login page -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="SAPDS Logo"></a>
+        </div>
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-button">Home</a></li>
+                <li><a href="about.html" class="nav-button">About Us</a></li>
+                <li><a href="services.html" class="nav-button">Services</a></li>
+                <li><a href="contact.html" class="nav-button">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">
+            <a href="login.html"><img src="user-icon.png" alt="User Icon"></a>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <main class="login-container">
+        <div class="login-box consumer">
+            <img src="consumer-icon.png" alt="Consumer Icon">
+            <button class="login-btn" onclick="loginUser('consumer')">Login as Consumer</button>
+        </div>
+        <div class="login-box farmer">
+            <img src="farmer-icon.png" alt="Farmer Icon">
+            <button class="login-btn" onclick="loginUser('farmer')">Login as Farmer</button>
+        </div>
+    </main>
+
+    <script src="login.js"></script> <!-- JavaScript file for login actions -->
+</body>
+</html>

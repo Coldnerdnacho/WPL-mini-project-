@@ -1,0 +1,61 @@
+/* Center login section */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 50px;
+}
+
+/* Box styling */
+.login-box {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Different colors for Consumer and Farmer */
+.consumer {
+    background: #D19C26;
+    color: white;
+}
+
+.farmer {
+    background: white;
+    border: 2px solid #D19C26;
+}
+
+/* Login button */
+.login-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Different button colors */
+.consumer .login-btn {
+    background: white;
+    color: #D19C26;
+}
+
+.farmer .login-btn {
+    background: #D19C26;
+    color: white;
+}
+
+/* Hover effect */
+.login-box:hover {
+    transform: scale(1.05);
+}
