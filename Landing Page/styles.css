@@ -58,14 +58,21 @@ header {
 
 /* Fix Menu Icon Position */
 .menu-icon {
-    position: absolute;
-    right: 20px;
-    top: 15px;
+    position: relative; /* Change from absolute to relative */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* Push it to the right */
+}
+
+.menu-icon a {
+    display: inline-block;
 }
 
 .menu-icon img {
     height: 40px;
     cursor: pointer;
+    margin-left: 20px; /* Add some spacing from the nav buttons */
 }
 
 /* Hero Section Fix */
